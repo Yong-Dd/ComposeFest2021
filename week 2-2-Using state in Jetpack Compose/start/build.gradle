@@ -18,7 +18,9 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
-
+task wrapper(type: Wrapper) {
+    gradleVersion = '7.0'
+}
 android {
     compileSdkVersion 31
 
